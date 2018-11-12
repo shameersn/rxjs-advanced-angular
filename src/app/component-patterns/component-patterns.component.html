@@ -1,0 +1,17 @@
+<app-toggle [checked]="true" (toggled)="onToggled($event)"></app-toggle>
+<hr>
+<app-on-off [buttonOn]="true" (toggle)="onToggled($event)">
+  <app-on-off-button [buttonOn]="buttonOn"></app-on-off-button>
+  <app-on-label [buttonOn]="buttonOn">On</app-on-label>
+  <app-off-label [buttonOn]="buttonOn">Off</app-off-label>
+</app-on-off>
+<hr>
+<app-sample-parent>
+  <app-sample-child-button></app-sample-child-button>
+  <app-sample-child-one></app-sample-child-one>
+  <app-sample-child-two></app-sample-child-two>
+  <app-sample-child-two></app-sample-child-two>
+  <app-sample-child-two></app-sample-child-two>
+  <app-other></app-other>
+</app-sample-parent>
+
